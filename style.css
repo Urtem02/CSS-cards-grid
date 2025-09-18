@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+}
+.display_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 12px;
+    color: snow;
+    background-color: skyblue;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    height: 300px;
+}
+.btn{
+    align-self: center;
+    width: 80px;
+    text-decoration: none;
+    background-color: cornflowerblue;
+    color: honeydew;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+.btn:hover{
+    background-color: darkblue;
+}
+h2{
+    margin: 0;
+}
+@media screen and (max-width: 900px){
+    .display_grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    .display_grid{
+        grid-template-columns: 1fr;
+    }
+    
+}
